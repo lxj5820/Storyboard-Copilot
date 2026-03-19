@@ -1,0 +1,494 @@
+{
+  "models": [
+    {
+      "id": "custom/gemini-3.1-flash-image-preview",
+      "mediaType": "image",
+      "displayName": "Gemini 3.1 Flash",
+      "providerId": "custom",
+      "description": "Google Gemini 3.1 Flash 图像生成，支持最高 4K 分辨率",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.1,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-3.1-flash-image-preview"
+    },
+    {
+      "id": "custom/gemini-3.1-flash-image-preview-2k",
+      "mediaType": "image",
+      "displayName": "Gemini 3.1 Flash 2K",
+      "providerId": "custom",
+      "description": "Google Gemini 3.1 Flash 图像生成，2K 分辨率版本",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "2K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.1,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-3.1-flash-image-preview-2k"
+    },
+    {
+      "id": "custom/gemini-3.1-flash-image-preview-4k",
+      "mediaType": "image",
+      "displayName": "Gemini 3.1 Flash 4K",
+      "providerId": "custom",
+      "description": "Google Gemini 3.1 Flash 图像生成，4K 分辨率版本",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "4K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.1,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-3.1-flash-image-preview-4k"
+    },
+    {
+      "id": "custom/gemini-3.1-flash-image-preview-512px",
+      "mediaType": "image",
+      "displayName": "Gemini 3.1 Flash 512",
+      "providerId": "custom",
+      "description": "Google Gemini 3.1 Flash 图像生成，512px 快速版本",
+      "eta": "30s",
+      "expectedDurationMs": 30000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "0.5K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "512px" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.1,
+        "resolutionMultipliers": {
+          "0.5K": 1
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-3.1-flash-image-preview-512px"
+    },
+    {
+      "id": "custom/nano-banana-2",
+      "mediaType": "image",
+      "displayName": "Nano Banana 2",
+      "providerId": "custom",
+      "description": "Google Nano-banana 2 第二代绘图模型，一致性极强，支持 1K/2K/4K 分辨率",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [
+        {
+          "key": "thinking_level",
+          "label": "Thinking level",
+          "labelKey": "modelParams.thinkingLevel",
+          "type": "enum",
+          "defaultValue": "off",
+          "options": [
+            { "value": "off", "label": "Off", "labelKey": "modelParams.thinkingDisabled" },
+            { "value": "minimal", "label": "Minimal", "labelKey": "modelParams.thinkingMinimal" },
+            { "value": "high", "label": "High", "labelKey": "modelParams.thinkingHigh" }
+          ]
+        }
+      ],
+      "defaultExtraParams": {
+        "thinking_level": "off"
+      },
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.2,
+        "resolutionMultipliers": {
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana-2"
+    },
+    {
+      "id": "custom/nano-banana-2-2k",
+      "mediaType": "image",
+      "displayName": "Nano Banana 2 2K",
+      "providerId": "custom",
+      "description": "Nano-banana 2 第二代绘图模型，2K 分辨率版本",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "2K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [
+        {
+          "key": "thinking_level",
+          "label": "Thinking level",
+          "labelKey": "modelParams.thinkingLevel",
+          "type": "enum",
+          "defaultValue": "off",
+          "options": [
+            { "value": "off", "label": "Off", "labelKey": "modelParams.thinkingDisabled" },
+            { "value": "minimal", "label": "Minimal", "labelKey": "modelParams.thinkingMinimal" },
+            { "value": "high", "label": "High", "labelKey": "modelParams.thinkingHigh" }
+          ]
+        }
+      ],
+      "defaultExtraParams": {
+        "thinking_level": "off"
+      },
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.2,
+        "resolutionMultipliers": {
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana-2-2k"
+    },
+    {
+      "id": "custom/nano-banana-2-4k",
+      "mediaType": "image",
+      "displayName": "Nano Banana 2 4K",
+      "providerId": "custom",
+      "description": "Nano-banana 2 第二代绘图模型，4K 分辨率版本",
+      "eta": "1.5min",
+      "expectedDurationMs": 90000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "4K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [
+        {
+          "key": "thinking_level",
+          "label": "Thinking level",
+          "labelKey": "modelParams.thinkingLevel",
+          "type": "enum",
+          "defaultValue": "off",
+          "options": [
+            { "value": "off", "label": "Off", "labelKey": "modelParams.thinkingDisabled" },
+            { "value": "minimal", "label": "Minimal", "labelKey": "modelParams.thinkingMinimal" },
+            { "value": "high", "label": "High", "labelKey": "modelParams.thinkingHigh" }
+          ]
+        }
+      ],
+      "defaultExtraParams": {
+        "thinking_level": "off"
+      },
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.2,
+        "resolutionMultipliers": {
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana-2-4k"
+    },
+    {
+      "id": "custom/gemini-3-pro-image-preview",
+      "mediaType": "image",
+      "displayName": "Gemini 3 Pro",
+      "providerId": "custom",
+      "description": "Google Gemini 3 Pro 图像生成，多张参考图支持",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.15,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "custom/gemini-2.5-flash-image",
+      "mediaType": "image",
+      "displayName": "Gemini 2.5 Flash",
+      "providerId": "custom",
+      "description": "Google Gemini 2.5 Flash 图像生成，快速版本",
+      "eta": "30s",
+      "expectedDurationMs": 30000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.04,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-2.5-flash-image"
+    },
+    {
+      "id": "custom/nano-banana-hd",
+      "mediaType": "image",
+      "displayName": "Nano Banana HD",
+      "providerId": "custom",
+      "description": "Nano-banana 高清版，生成 2K 高清大图",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "2K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.12,
+        "resolutionMultipliers": {
+          "1K": 1,
+          "2K": 1.5
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana-hd"
+    },
+    {
+      "id": "custom/nano-banana",
+      "mediaType": "image",
+      "displayName": "Nano Banana",
+      "providerId": "custom",
+      "description": "Google Nano-banana 图像生成，支持自定义图片比例",
+      "eta": "1min",
+      "expectedDurationMs": 60000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.08,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana"
+    },
+    {
+      "id": "custom/gemini-2.5-flash-image-preview",
+      "mediaType": "image",
+      "displayName": "Gemini 2.5 Flash Preview",
+      "providerId": "custom",
+      "description": "Google Gemini 2.5 Flash 预览版，多张参考图支持",
+      "eta": "30s",
+      "expectedDurationMs": 30000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "1K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "0.5K", "label": "0.5K" },
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" }
+      ],
+      "extraParamsSchema": [],
+      "defaultExtraParams": {},
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.04,
+        "resolutionMultipliers": {
+          "0.5K": 0.75,
+          "1K": 1,
+          "2K": 1.5
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "gemini-2.5-flash-image-preview"
+    },
+    {
+      "id": "custom/nano-banana-pro",
+      "mediaType": "image",
+      "displayName": "Nano Banana Pro",
+      "providerId": "custom",
+      "description": "Nano-banana 高级版，支持 1K/2K/4K 分辨率",
+      "eta": "1.5min",
+      "expectedDurationMs": 90000,
+      "defaultAspectRatio": "1:1",
+      "defaultResolution": "2K",
+      "aspectRatios": ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"],
+      "resolutions": [
+        { "value": "1K", "label": "1K" },
+        { "value": "2K", "label": "2K" },
+        { "value": "4K", "label": "4K" }
+      ],
+      "extraParamsSchema": [
+        {
+          "key": "thinking_level",
+          "label": "Thinking level",
+          "labelKey": "modelParams.thinkingLevel",
+          "type": "enum",
+          "defaultValue": "minimal",
+          "options": [
+            { "value": "off", "label": "Off", "labelKey": "modelParams.thinkingDisabled" },
+            { "value": "minimal", "label": "Minimal", "labelKey": "modelParams.thinkingMinimal" },
+            { "value": "high", "label": "High", "labelKey": "modelParams.thinkingHigh" }
+          ]
+        }
+      ],
+      "defaultExtraParams": {
+        "thinking_level": "minimal"
+      },
+      "pricing": {
+        "currency": "USD",
+        "baseAmount": 0.2,
+        "resolutionMultipliers": {
+          "1K": 1,
+          "2K": 1.5,
+          "4K": 2
+        }
+      },
+      "endpoints": {
+        "generate": "https://ai.comfly.chat/v1/images/generations",
+        "edit": "https://ai.comfly.chat/v1/images/edits"
+      },
+      "apiName": "nano-banana-pro"
+    }
+  ],
+  "defaultModelId": "custom/gemini-3.1-flash-image-preview"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "./docs/schemas/model-config.schema.json",
+  "version": "1.0.0",
+  "providers": [
+    {
+      "id": "custom",
+      "name": "Custom Provider",
+      "label": "自定义",
+      "defaultEndpoint": "https://ai.comfly.chat/",
+      "models": [
+        {
+          "id": "custom/nano-banana-2",
+          "apiName": "nano-banana",
+          "displayName": "Nano Banana 2",
+          "description": "ai.comfly · Nano Banana 2 图像生成与编辑",
+          "defaultAspectRatio": "1:1",
+          "defaultResolution": "1K",
+          "aspectRatios": [
+            "21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"
+          ],
+          "resolutions": [
+            { "value": "0.5K", "label": "0.5K" },
+            { "value": "1K", "label": "1K" },
+            { "value": "2K", "label": "2K" },
+            { "value": "4K", "label": "4K" }
+          ],
+          "expectedDurationMs": 60000
+        },
+        {
+          "id": "custom/nano-banana-pro",
+          "apiName": "nano-banana-pro",
+          "displayName": "Nano Banana Pro",
+          "description": "ai.comfly · Nano Banana Pro 图像生成与编辑",
+          "defaultAspectRatio": "1:1",
+          "defaultResolution": "1K",
+          "aspectRatios": [
+            "21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"
+          ],
+          "resolutions": [
+            { "value": "0.5K", "label": "0.5K" },
+            { "value": "1K", "label": "1K" },
+            { "value": "2K", "label": "2K" },
+            { "value": "4K", "label": "4K" }
+          ],
+          "expectedDurationMs": 60000
+        }
+      ]
+    }
+  ],
+  "defaultModelId": "custom/nano-banana-2"
+}
